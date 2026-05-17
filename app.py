@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 # My app
 app=Flask(__name__) # app is the name of my flask application
-#app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///flasktestdb.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///flasktestdb.db"
 
 # this line is for deployment
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
